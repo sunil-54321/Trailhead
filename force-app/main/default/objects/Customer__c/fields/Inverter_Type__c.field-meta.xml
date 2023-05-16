@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inverter_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Inverter Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>String</fullName>
+                <default>false</default>
+                <label>String</label>
+            </value>
+            <value>
+                <fullName>Micro&apos;</fullName>
+                <default>false</default>
+                <label>Micro&apos;</label>
+            </value>
+            <value>
+                <fullName>AC PV</fullName>
+                <default>false</default>
+                <label>AC PV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

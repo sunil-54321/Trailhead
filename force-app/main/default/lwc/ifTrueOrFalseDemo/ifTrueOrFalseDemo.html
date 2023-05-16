@@ -1,0 +1,13 @@
+<template>
+        <lightning-card title="If True Or false Demo by Sir Sunil">
+           <lightning-button variant="brand" 
+                          label={hanleChange} 
+                          onclick={handleClick} 
+                          class="slds-m-left_x-small"></lightning-button>
+       </lightning-card>
+   <template if:true={cardVisible}>
+      <lightning-card title= "Show this card when click on show button ">
+               {mytitle}
+       </lightning-card>
+    </template>
+</template>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mailing_City_is_Delhi</fullName>
+    <active>false</active>
+    <errorConditionFormula>(MailingCity &lt;&gt;&apos;Delhi&apos;  || MailingPostalCode &lt;&gt; &apos;201301&apos;) &amp;&amp;  MailingCountry = &apos;INDIA&apos;</errorConditionFormula>
+    <errorDisplayField>MailingCity</errorDisplayField>
+    <errorMessage>Mailing City and Mailing Postalcode should be correct.</errorMessage>
+</ValidationRule>

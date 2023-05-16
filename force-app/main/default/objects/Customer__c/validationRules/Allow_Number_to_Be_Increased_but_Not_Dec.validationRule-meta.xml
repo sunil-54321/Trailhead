@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allow_Number_to_Be_Increased_but_Not_Dec</fullName>
+    <active>true</active>
+    <description>Allows a custom field called Commit Amount to be increased but not decreased after initial creation. This rule uses the PRIORVALUE() function to compare the updated value of the field to its value prior to update.</description>
+    <errorConditionFormula>PRIORVALUE(Commit_Amount__c) &gt; Commit_Amount__c</errorConditionFormula>
+    <errorDisplayField>Commit_Amount__c</errorDisplayField>
+    <errorMessage>Commit Amount cannot be decreased.</errorMessage>
+</ValidationRule>

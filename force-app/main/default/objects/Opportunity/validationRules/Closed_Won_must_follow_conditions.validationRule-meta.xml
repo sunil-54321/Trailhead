@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Won_must_follow_conditions</fullName>
+    <active>false</active>
+    <errorConditionFormula>TEXT(Account.Industry)= &apos;Healthcare&apos; &amp;&amp;  NOT(ISBLANK(Account.Fax)) &amp;&amp;  IsPrivate = true &amp;&amp;  NOT(ISBLANK(OrderNumber__c)) &amp;&amp;  NOT(TEXT(StageName) = &apos;Closed Won&apos; )</errorConditionFormula>
+    <errorMessage>Stage should be closed Won</errorMessage>
+</ValidationRule>

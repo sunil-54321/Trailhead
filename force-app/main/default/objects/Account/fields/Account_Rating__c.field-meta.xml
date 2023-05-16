@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Rating__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (AND (AnnualRevenue &gt; 10000000,
+CONTAINS (CASE (BillingCountry, &quot;United States&quot;, &quot;US&quot;, &quot;America&quot;, &quot;US&quot;, &quot;USA&quot;, &quot;US&quot;, &quot;NA&quot;), &quot;US&quot;)),
+IF(ISPICKVAL(Type, &quot;Manufacturing Partner&quot;), &quot;Hot&quot;,
+IF(OR (ISPICKVAL (Type, &quot;Channel Partner/Reseller&quot;),
+ISPICKVAL(Type, &quot;Installation Partner&quot;)), &quot;Warm&quot;, &quot;Cold&quot;)),
+&quot;Cold&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Account Rating</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
