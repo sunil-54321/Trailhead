@@ -4,14 +4,14 @@ export default class ShowToastmessage extends LightningElement {
     myTitle= 'Gyan Bhandar';
 
     //1st function
-    handleclick(){
+    handleClick(){
         this.showToast();
     }
-
+//2nd function
     showToast(){
         const event =new ShowToastEvent({
-            title:'show Toast Demo',
-            message:'Do you love me to click if, click on my child buttton'
+            title:'Error',
+            message:'Do you love me to click if yes, click on my child buttton'
         });
         this.dispatchEvent (event);
     }

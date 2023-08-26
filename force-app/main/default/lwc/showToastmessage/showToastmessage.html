@@ -1,10 +1,11 @@
 <template>
-    <lightning-card title="{myTitle}">
+    <lightning-card title="myTitle">
         {myTitle}
     </lightning-card>
         
     <!--Requirment is : When we click lightning button, this show display the toast message
     and error should 'Do you love me to click if, click on another buttton'-->
-    <lightning:button variant="brand" label="Brand" title="Brand action" onclick="{! c.handleclick }" />
-
+    <lightning-button variant="brand" label="Brand" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
 </template>
+
+
